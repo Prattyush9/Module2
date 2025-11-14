@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Focus Examples</title>
+
+    <style>
+
+        /* Basic focus example */
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+            background-color: #eef7ff;
+        }
+
+        /* Focus example for textarea */
+        textarea:focus {
+            border: 2px solid green;
+            outline: none;
+            background-color: #eaffea;
+        }
+
+        /* Focus for select dropdown */
+        select:focus {
+            border: 2px solid purple;
+            background-color: #f8e6ff;
+            outline: none;
+        }
+
+        /* Focus for a styled input box */
+        .styled {
+            padding: 10px;
+            border: 2px solid gray;
+            transition: 0.3s;
+        }
+
+        .styled:focus {
+            border-color: red;
+            box-shadow: 0 0 10px red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Focus Examples</h1>
+
+<h3>Input Field (Focus)</h3>
+<input type="text" placeholder="Click me">
+
+<h3>Textarea (Focus)</h3>
+<textarea rows="3" cols="30" placeholder="Type here..."></textarea>
+
+<h3>Select Dropdown (Focus)</h3>
+<select>
+    <option>Select an option</option>
+    <option>Option 1</option>
+    <option>Option 2</option>
+</select>
+
+<h3>Styled Input Focus</h3>
+<input class="styled" type="text" placeholder="Fancy focus effect">
+
+</body>
+</html>
