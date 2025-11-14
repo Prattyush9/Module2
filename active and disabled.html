@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Active & Disabled Examples by prattyush</title>
+
+    <style>
+
+        /* ACTIVE STATE (when element is being clicked) */
+        button:active {
+            background-color: darkblue;
+            color: white;
+            transform: scale(0.95);
+        }
+
+        a:active {
+            color: red;
+        }
+
+        /* DISABLED STATE */
+        button:disabled {
+            background-color: gray;
+            color: white;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        input:disabled {
+            background-color: #eee;
+            color: #777;
+            border: 1px solid #aaa;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Active & Disabled Examples</h1>
+
+<h2>Active Example (Click me)</h2>
+<button>Click (Active Effect)</button>
+
+<h2>Active Example on Link</h2>
+<a href="#">Click this link to see active color</a>
+
+<hr>
+
+<h2>Disabled Button</h2>
+<button disabled>Disabled Button</button>
+
+<h2>Disabled Input Field</h2>
+<input type="text" value="You can't type here" disabled>
+
+</body>
+</html>
