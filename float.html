@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Float Examples by prattyush
+    </title>
+
+    <style>
+
+        /* Float Left */
+        .box-left {
+            width: 150px;
+            height: 100px;
+            background: lightgreen;
+            float: left;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Float Right */
+        .box-right {
+            width: 150px;
+            height: 100px;
+            background: lightcoral;
+            float: right;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Image float example */
+        .img-wrap {
+            float: left;
+            margin: 10px;
+            width: 150px;
+        }
+
+        /* Clearfix example */
+        .clear {
+            clear: both;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Float Examples</h1>
+
+<!-- Float Left Box -->
+<div class="box-left">Float Left</div>
+
+<!-- Float Right Box -->
+<div class="box-right">Float Right</div>
+
+<p class="clear"></p>
+
+<h2>Image Float Example</h2>
+
+<img class="img-wrap" src="https://via.placeholder.com/150" alt="sample">
+
+<p>
+    This paragraph wraps around the floated image.  
+    Floating allows elements like images or boxes to let text flow beside them.  
+    This is how newspapers and blogs style images.
+</p>
+
+<p class="clear"></p>
+
+<h2>After Clearing Floats</h2>
+<p>
+    This text appears below all floated elements because we used <b>clear: both;</b>
+</p>
+
+</body>
+</html>
