@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typography & Shadow Examples</title>
+
+    <style>
+
+        /* TEXT SHADOW EXAMPLES */
+        .textshadow-simple {
+            font-size: 40px;
+            text-shadow: 2px 2px 4px gray;
+        }
+
+        .textshadow-glow {
+            font-size: 40px;
+            color: white;
+            background: black;
+            text-shadow: 0 0 10px red, 0 0 20px red;
+        }
+
+        /* TEXT INDENT EXAMPLES */
+        .indent-small {
+            text-indent: 40px;
+            font-size: 18px;
+        }
+
+        .indent-large {
+            text-indent: 100px;
+            font-size: 18px;
+        }
+
+        /* BOX SHADOW EXAMPLES */
+        .boxshadow-light {
+            width: 200px;
+            height: 100px;
+            background: lightblue;
+            margin-bottom: 20px;
+            box-shadow: 5px 5px 10px gray;
+            padding: 10px;
+        }
+
+        .boxshadow-strong {
+            width: 200px;
+            height: 100px;
+            background: pink;
+            box-shadow: 0 0 20px red;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1 class="textshadow-simple">Simple Text Shadow</h1>
+
+<h1 class="textshadow-glow">Glowing Text Shadow</h1>
+
+<hr>
+
+<p class="indent-small">
+    This paragraph has a small text indent of 40px. It pushes the first line to the right.
+</p>
+
+<p class="indent-large">
+    This paragraph has a large text indent of 100px. Clearly noticeable indentation.
+</p>
+
+<hr>
+
+<div class="boxshadow-light">
+    Light box shadow example.
+</div>
+
+<div class="boxshadow-strong">
+    Strong glowing box shadow example.
+</div>
+
+</body>
+</html>
