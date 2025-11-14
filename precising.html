@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Precise Positioning</title>
+
+    <style>
+
+        /* 1. RELATIVE POSITIONING */
+        .relative-box {
+            width: 150px;
+            height: 100px;
+            background: lightblue;
+            position: relative;
+            top: 20px;    
+            left: 40px;   
+        }
+
+        /* 2. ABSOLUTE POSITIONING */
+        .container {
+            width: 300px;
+            height: 200px;
+            background: #ddd;
+            position: relative; 
+            margin-top: 30px;
+        }
+
+        .absolute-box {
+            width: 120px;
+            height: 80px;
+            background: orange;
+            position: absolute;
+            top: 50px;   
+            left: 100px;
+        }
+
+        /* 3. FIXED POSITIONING (stays on screen always) */
+        .fixed-box {
+            width: 100px;
+            padding: 10px;
+            background: purple;
+            color: white;
+            position: fixed;
+            bottom: 20px;   
+            right: 20px;    
+        }
+
+        /* 4. STICKY POSITIONING */
+        .sticky-box {
+            background: yellow;
+            padding: 10px;
+            position: sticky;
+            top: 0; 
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Precise Positioning Examples</h1>
+
+<h2>1. Relative Position</h2>
+<div class="relative-box">Relative Box</div>
+
+<h2>2. Absolute Position (inside container)</h2>
+<div class="container">
+    <div class="absolute-box">Absolute Box</div>
+</div>
+
+<h2>3. Sticky Header Exammple</h2>
+<div class="sticky-box">I stick when you scrogll</div>
+
+<p>Scroll down to test sticky...</p>
+<p style="height: 600px;"></p>
+
+<h2>4. Fixed Position (corner)</h2>
+<div class="fixed-box">Fixed Box</div>
+
+</body>
+</html>
