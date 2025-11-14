@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Box Model</title>
+
+    <style>
+
+        .box {
+            width: 200px;                /* Content width */
+            height: 100px;               /* Content height */
+            background-color: lightyellow;
+
+            padding: 20px;               /* Space inside the box */
+            border: 5px solid orange;    /* Border around padding */
+            margin: 30px;                /* Space outside the box */
+
+            font-size: 18px;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+
+            padding: 10px 30px;          /* Vertical 10px, horizontal 30px */
+            border: 3px dashed blue;
+            margin: 40px;
+
+            font-size: 18px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>CSS Box Model Examples</h1>
+
+<div class="box">
+    Content + Padding + Border + Margin
+</div>
+
+<div class="box2">
+    Second box with different padding, border & margin.
+</div>
+
+</body>
+</html>
