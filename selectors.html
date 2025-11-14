@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors by Prattyush</title>
+
+    <style>
+
+        /* 1. Element Selector */
+        p {
+            font-size: 18px;
+            color: brown;
+        }
+
+        /* 2. ID Selector */
+        #title {
+            color: blue;
+            text-align: center;
+        }
+
+        /* 3. Class Selector */
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+
+        /* 4. Group Selector */
+        h2, span {
+            color: green;
+        }
+
+        /* 5. Descendant Selector */
+        div p {
+            color: purple;
+        }
+
+        /* 6. Child Selector */
+        ul > li {
+            color: red;
+        }
+
+        /* 7. Pseudo-class Selector */
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* 8. Pseudo-element Selector */
+        p::first-letter {
+            font-size: 30px;
+            color: orange;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1 id="title">CSS Selectors Demo</h1>
+
+<h2>Example Section</h2>
+
+<p>This is a normal paragraph styled by the element selector.</p>
+
+<p class="highlight">This paragraph uses a class selector.</p>
+
+<span>This span uses group selector styling.</span>
+
+<div>
+    <p>This paragraph is inside a div (descendant selector).</p>
+</div>
+
+<ul>
+    <li>Child Selector Active</li>
+    <li>These list items are styled</li>
+</ul>
+
+<button>Hover Me</button>
+
+</body>
+</html>
